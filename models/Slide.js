@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Define collection and schema
-let Employee = new Schema({
+let Slide = new Schema({
    name: {
       type: String
    },
@@ -16,7 +16,7 @@ let Employee = new Schema({
       type: Number
    }
 }, {
-   collection: 'employees'
+   collection: 'slides'
 })
 
-module.exports = mongoose.model('Employee', Employee)
+module.exports = mongoose.model('Slide', Slide)
